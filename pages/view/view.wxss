@@ -1,0 +1,24 @@
+/* pages/view/view.wxss */
+.box{
+  background-color: pink
+}
+
+.box1{
+  background-color: deeppink;
+  width:100px;
+  height:100px
+}
+
+.hover-class{
+  background-color: purple;
+  font-size:30px
+}
+.box2{
+  background-color: hotpink;
+  width:200px;
+  height: 200px;
+  margin-top: 20px
+}
+.box2-hover{
+  background-color: red
+}

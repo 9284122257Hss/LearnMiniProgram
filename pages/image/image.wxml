@@ -1,0 +1,26 @@
+<!-- 1.image的基本使用 -->
+<!-- 
+  重点：
+    1.image组件可以写成单标签，也可以写成双标签
+    2.image组件默认有自己的大小 （320x240）
+    3.image组件是行内块级元素(inline-block)
+ -->
+ <!-- <image/> -->
+
+<!-- 2.src:设置图片地址 本地路径(相对路径/绝对路径)/远程地址 -->
+<image src="../../assets/tabbar/cart.png"/>
+<image src="/assets/tabbar/cart.png"/>
+<image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1591960235884&di=da88eb5a7a32130dd48c776284c5d519&imgtype=0&src=http%3A%2F%2Fd.ifengimg.com%2Fw600%2Fp0.ifengimg.com%2Fpmop%2F2018%2F0726%2F5460299972CC3E1D469F22AB9EBEAAECD27231B8_size118_w690_h478.jpeg"/>
+
+<!-- 补充：显示相册里面的某张图片 -->
+<button bindtap="handleChooseAlbum">选中照片</button>
+<image src="{{imagePath}}"/>
+
+<!-- 3.bindload 监听图片加载完成 -->
+<!-- 4.lazy-load 图片懒加载 -->
+<image
+src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1591960235877&di=f64e7c0198be1ea7421f516d44dd33c5&imgtype=0&src=http%3A%2F%2Fn.sinaimg.cn%2Ffront%2F200%2Fw1080h720%2F20181201%2FHo1K-hpfyces9947970.jpg"
+bindload="handleImageLoad" lazy-load/>
+
+<!-- 5.show-menu-by-longpress 长按图片出现识别小程序码-->
+<image src="http://img.atobo.com/ProductImg/EWM/UWeb/4/4/1/4/9140/44149140/1.gif" show-menu-by-longpress mode="scaleToFill"/>

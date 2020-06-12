@@ -1,0 +1,23 @@
+// pages/image/image.js
+Page({
+  data: {
+    imagePath:''
+  },
+
+  handleChooseAlbum(){
+    wx.chooseImage({
+      success: (res) => {
+        // 1.取出路径
+        const path = res.tempFilePaths[0]
+
+        // 2.设置imagePath
+        this.setData({
+          imagePath:path
+        })
+      },
+    })
+  },
+  handleImageLoad(){
+    console.log('叮咚，图片加载完成')
+  }
+})

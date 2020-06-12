@@ -1,0 +1,23 @@
+.content1{
+  background-color: pink;
+  white-space: nowrap
+}
+.item1{
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  background-color: hotpink;
+  display: inline-block;
+
+}
+.content2{
+  background-color: orange;
+  height: 200px;
+  margin-top: 20px
+}
+
+.item2{
+  height: 100px;
+  background-color: blue;
+  margin: 10px
+}
