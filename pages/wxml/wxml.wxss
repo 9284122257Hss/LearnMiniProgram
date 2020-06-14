@@ -1,0 +1,7 @@
+.box{
+  color: pink;
+}
+
+.active{
+  color: purple;
+}

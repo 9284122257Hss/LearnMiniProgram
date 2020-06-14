@@ -1,3 +1,10 @@
 <!--pages/home/home.wxml-->
-<text class="title">Hello World</text>
-<button size="mini">按钮</button>
+<text id="content" class="title">Hello World</text>
+<button size="mini" id="" class="">按钮</button>
+<view id="" class=""></view>
+<scroll-view id="" class=""></scroll-view>
+
+<!-- 1.hidden属性 -->
+<view hidden>哈哈哈哈</view>
+
+<!-- <import src='/wxml/template.wxml'> -->

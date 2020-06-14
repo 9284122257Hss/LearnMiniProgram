@@ -1,0 +1,4 @@
+<view>
+  <view>大家好，这里是首页</view>
+  <button size="mini">请点击我</button>
+</view>

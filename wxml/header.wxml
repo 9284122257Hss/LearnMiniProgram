@@ -1,0 +1,5 @@
+
+<view>
+  <include src="./nav.wxml"/>
+  <button size="mini">请不要点击我</button>
+</view>

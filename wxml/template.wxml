@@ -1,0 +1,7 @@
+<!-- <include src="./abc.wxml"> -->
+
+<!-- 创建模板 -->
+<template name="contentItem">
+  <button size="mini">{{buttonText}}</button>
+  <view>{{content}}</view>
+</template>
