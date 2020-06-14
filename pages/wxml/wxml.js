@@ -44,5 +44,8 @@ Page({
     this.setData({
       score:this.data.score + 6
     })
+  },
+  numberToFixed(value){
+    return value.toFixed(2)
   }
 })

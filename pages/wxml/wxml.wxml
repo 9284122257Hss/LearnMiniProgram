@@ -110,3 +110,8 @@
 <import src="../../wxml/abc.wxml"/>
 <template is="abc"/>
 <include src="/wxml/footer.wxml"/>
+
+<!-- wxs -->
+<!-- 错误写法 -->
+<!-- <view>{{25.66666666.toFixed(2)}}</view> -->
+<!-- <view>{{NumberTofixed(25.66666666666)}}</view> -->

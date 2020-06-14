@@ -1,0 +1,19 @@
+
+  // 不要使用ES6的语法，用ES5的语法 
+  var message = 'Hello World';
+  var name = 'czz';
+
+  function sum(num1,num2){
+    return num1 + num2
+  }
+
+  function test(){
+    return 'test function'
+  }
+  
+  //comminjs的模块化导出的方法
+  module.exports= {
+    message:message,
+    name:name,
+    sum:sum
+  }
