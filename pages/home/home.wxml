@@ -1,3 +1,43 @@
-<!--pages/home/home.wxml-->
-<text class="title">Hello World</text>
-<button size="mini">按钮</button>
+<!-- 1.事件处理的回顾 -->
+<button bindtap="handleBtnClick" size="mini">按钮</button>
+<button bind:tap="handleBtnClick" size="mini">按钮</button>
+<button catch:tap="handleBtnClick" size="mini">按钮</button>
+
+<!-- 2.常见的一些事件  (基本大多数组件都会有的事件)-->
+<view class="box" 
+   bind:touchstart="handleTouchStart"
+   bind:touchmove="handleTouchMove"
+   bind:touchend="handleTouchEnd"
+   bind:tag="handleTag"
+   bind:longpress="handleLongPress"></view>
+
+<!-- 3.事件对象(event)的分析-->
+<!--  touches和changedTouches的区别：
+        touches用来记录当前有几根手指在小程序中使触摸的，和触摸点的位置 
+        changeTouches用来记录触摸点变化的  
+      这两项在touchend和剁手指触摸时所存的值会不同，大多情况下是一样的
+-->
+<button size="mini" bindtap="handleEventClick" id="btn" bind:touchend="handleEventEnd">事件对象</button>
+<!-- 
+
+ -->
+<view class="outer" bindtap="handleOuter" id="outer">外层的view
+  <view class="inner" bindtap="handleInner" id="inner">内层的view</view>
+</view>
+
+<!-- 4.事件的传递参数 -->
+<view class="container">
+   <block wx:for="{{titles}}" wx:key="index">
+      <view class="item" 
+         bindtap="handleItemClick"
+         data-index="{{index}}"
+         data-item="{{item}}">{{item}}</view>
+   </block>
+</view>
+
+<!-- 5.事件冒泡和事件捕获 -->
+<view class="view1" capture-bind:tap="handleCaptureView1" bindtap="handleTapView1">
+   <view class="view2" capture-bind:tap="handleCaptureView2" catchtap="handleTapView2">
+      <view class="view3" capture-bind:tap="handleCaptureView3" bindtap="handleTapView3"></view>
+   </view>
+</view>
