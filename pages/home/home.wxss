@@ -3,3 +3,14 @@
   color: pink;
   font-size: 30px
 }
+.red{
+  color: red;
+}
+
+.blue{
+  color: blue;
+}
+
+.pink{
+  color: pink;
+}

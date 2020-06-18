@@ -1,6 +1,10 @@
 {
   "pages": [
     "pages/home/home",
-    "pages/about/about"   
-  ]
+    "pages/about/about"
+  ],
+  "usingComponents": {
+    "my-cpn": "/components/my-cpn/my-cpn"
+  },
+  "sitemapLocation": "sitemap50.json"
 }
